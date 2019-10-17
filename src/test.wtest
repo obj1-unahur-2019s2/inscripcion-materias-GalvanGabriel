@@ -1,0 +1,20 @@
+import materias.*
+
+describe "Inicializar clases"{
+	var toni = new Estudiante()
+	var obj1 = new Materias()
+	var obj2 = new Materias()
+	
+	
+	
+	test "toni"{
+		toni.inscribirseMateria(obj1)
+		toni.registrarAprobacion(obj1,7)
+		
+
+		assert.equals(7,toni.promedio())
+
+		
+	}
+	
+}
